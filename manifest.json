@@ -1,0 +1,20 @@
+{
+
+    "manifest_version": 2,
+    "name": "Related Video Remover",
+    "version": "1.0",
+
+    "description": "Prevents related and recommended videos from being viewable from a video on YouTube.",
+
+    "icons": {
+        "48": "icon/related-remover-icon-48px.png"
+    },
+
+    "content_scripts": [
+        {
+            "matches": ["*://*.youtube.com/watch*"],
+            "js": ["related-blocker.js"]
+    }
+  ]
+
+}
