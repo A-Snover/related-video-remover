@@ -15,6 +15,12 @@
             "matches": ["*://*.youtube.com/watch*"],
             "js": ["related-blocker.js"]
     }
-  ]
+  ],
+
+    "options_ui": {
+        "page": "settings/options.html"
+    },
+
+    "permissions": ["storage"]
 
 }

@@ -1,4 +1,4 @@
-window.onmousemove = function () {
+/*window.onmousemove = function () {
 
     var removeIDs = ["related", "comments"];
     var removeListLen = removeIDs.length;
@@ -10,4 +10,22 @@ window.onmousemove = function () {
 
     }
 
+}*/
+
+function onError(error) {
+    console.log(`Error: ${error}`);
 }
+
+window.onmousemove = function onGot(item) {
+
+    if (item.blockRelated) {
+        document.getElementById("related").remove();
+    }
+    if (item.blockComments) {
+        document.getElementById("comments").remove();
+    }
+}
+
+var gettingBlockRelated = browser.storage.local.get("blockRelated");
+var gettingBlockComments = browser.storage.local.get("blockComments");
+getting.then(onGot, onError);
