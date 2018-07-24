@@ -1,13 +1,13 @@
 {
 
     "manifest_version": 2,
-    "name": "Related Video Remover",
+    "name": "YouTube Distraction Remover",
     "version": "1.0",
 
-    "description": "Prevents related and recommended videos from being viewable from a video on YouTube.",
+    "description": "Prevents related videos and comments from being viewable from a video on YouTube.",
 
     "icons": {
-        "48": "icon/related-remover-icon-48px.png"
+        "48": "icon/remover-icon-48px.png"
     },
 
     "content_scripts": [
